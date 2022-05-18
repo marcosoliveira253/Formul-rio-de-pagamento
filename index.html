@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ept-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form class="container" method="post">
+        <h1>Formulário de Pagamento</h1>
+        <!--<p class="obs">Os campos obrigatórios são seguidos por<strong title="required"> *</strong></p>-->
+        <section>
+            <h2>Escolha sua Pizza</h2>
+            <fieldset>
+                <legend>Tamanho</legend>
+                <ul>
+                    <li>
+                        <label for="title_1">
+                            <input type="radio" id="title_1" name="pizza" required>
+                            Pizza Grande
+                        </label>
+                    </li>
+                    <li>
+                        <label for="title_2">
+                            <input type="radio" id="title_2" name="pizza">
+                            Pizza Média
+                        </label>
+                    </li>
+                    <li>
+                        <label for="title_3">
+                            <input type="radio" id="title_3" name="pizza">
+                            Pizza Pequena
+                        </label>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset>    
+                <legend>Sabor</legend>
+                <ul>
+                    <li>
+                        <label for="title_4">
+                            <input type="radio" id="title_4" name="sabor" required>
+                            Pizza Mussarela
+                        </label>
+                    </li>
+                    <li>
+                        <label for="title_5">
+                            <input type="radio" id="title_5" name="sabor">
+                            Pizza Calabreza
+                        </label>
+                    </li>
+                    <li>
+                        <label for="title_6">
+                            <input type="radio" id="title_6" name="sabor">
+                            Pizza Mista
+                        </label>
+                    </li>
+                </ul>
+            </fieldset>
+
+            <div class="dados">
+            <h2>Informações de Contato</h2>
+
+            <p>
+                <label for="name">
+                    <span title="required">Nome: </span>
+                </label>
+                <input type="text" id="name" name="username" required>
+            </p>
+            <p>
+                <label for="mail">
+                    <span title="required">E-mail: </span>
+                </label>
+                <input type="email" id="mail" name="usermail" required>
+            </p>
+            <!--<p>
+                <label for="pwd">
+                    <span title="required">Password: </span>
+                </label>
+                <input type="password" id="pwd" name="password"maxlength="6">
+            </p>-->
+            </div>
+        </section>
+        <section class="cartao">
+            <h2>Informações de Pagamento</h2>
+            <p>
+                <label for="card">
+                    <span>Tipo do Cartão: </span>
+                </label>
+                <select name="usercard" id="card">
+                    <option value="visa">Visa</option>
+                    <option value="mc">MastreCard</option>
+                    <option value="elo">Elo</option>
+                    <option value="hiper">Hipercard</option>
+                    <option value="amex">American Express</option>
+                </select>
+            </p>
+            <p>
+                <label for="number">
+                    <span >Número do cartão: </span>  
+                </label>
+                <input type="tel" id="number" name="cardnumber" required>
+            </p>
+            <p>
+                <label for="number" required>
+                    <span>CVV do cartão: </span>
+                </label>
+                <input type="password" id="number" name="cardnumber"maxlength="3"placeholder="123" required>
+            </p>
+            <p>
+                <label for="expiration" required>
+                    <span>Data de validade: </span>                   
+                </label>
+                <input type="number" id="quantity" name="quantity" min="1" max="12" placeholder="MM"required>
+                <input type="number" id="quantity" name="quantity" min="22" max="45" placeholder="AA"required>
+            </p>
+        </section>
+        <section>
+            <p>
+                <button type="submit">Pagar</button>
+            </p>
+        </section>
+    </form>
+</body>
+</html>
